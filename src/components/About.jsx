@@ -8,7 +8,7 @@ import { SectionWrapper } from "../higherImprtant";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='xs:w-[250px] w-full m-3'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -50,7 +50,7 @@ const AboutBody = () => {
         I have two years diploma in Electrical Engineering Technology from NAIT. Additionally, I recently graduated from the Lighthouse Lab with diploma in Web development for more experiences in programming. I am passionate to learning new technologies, and love to communicate with others to share the knowledge, and I have strong time management skill.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap' style={{gap: "40px"}}>
+      <div className='mt-20 flex flex-wrap'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
