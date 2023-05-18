@@ -15,13 +15,13 @@ export const NavBar = () => {
       <div className='flex justify-between max-w-7x1 mx-auto w-full'>
         <Link
           to={'/'}
-          className='flex item-center gap-2'
+          className='flex item-center gap'
           onClick={() => {
             setActive('');
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-[54px] h-[54px] object-contain' />
+          <img src={logo} alt='logo' className='w-[54px] h-[54px] object-contain' style={{marginRight: "8px"}} />
           <div>
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Yuncheol
@@ -33,7 +33,7 @@ export const NavBar = () => {
 
           </div>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row'>
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -41,6 +41,7 @@ export const NavBar = () => {
                 active === link.title ? 'text-white' : 'text-secondary'
               } hover:text-white cursor-pointer text-[18px] font-medium`}
               onClick={() => setActive(link.title)}
+              style={{margin:"10px 20px"}}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
