@@ -47,7 +47,7 @@ const AboutBody = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I have two years diploma in Electrical Engineering Technology from NAIT. Additionally, I recently graduated from the Lighthouse Lab with diploma in Web development for more experiences in programing. I am passionate to learning new technologies, and love to communicate with others to share the knowledge, and I have strong time management skill.
+        I have two years diploma in Electrical Engineering Technology from NAIT. Additionally, I recently graduated from the Lighthouse Lab with diploma in Web development for more experiences in programming. I am passionate to learning new technologies, and love to communicate with others to share the knowledge, and I have strong time management skill.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

@@ -51,7 +51,7 @@ const services = [
     icon: web,
   },
   {
-    title: '"Can do" Attribute',
+    title: '"Can do" Attitude',
     icon: creator,
   },
   {
