@@ -67,9 +67,9 @@ export const ContactBody = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-9'
+          className='mt-12 flex flex-col'
         >
-          <label className='flex flex-col'>
+          <label className='flex flex-col' style={{marginBottom: "36px"}}>
             <span className='text-white'>Your Name: </span>
             <input
               type='text'
@@ -81,7 +81,7 @@ export const ContactBody = () => {
             />
           </label>
 
-          <label className='flex flex-col'>
+          <label className='flex flex-col' style={{marginBottom: "36px"}} >
             <span className='text-white'>Your Email: </span>
             <input
               type='email'
@@ -93,7 +93,7 @@ export const ContactBody = () => {
             />
           </label>
 
-          <label className='flex flex-col'>
+          <label className='flex flex-col'  style={{marginBottom: "36px"}}>
             <span className='text-white'>Your Message: </span>
             <textarea
               name='message'
@@ -108,7 +108,7 @@ export const ContactBody = () => {
           <button
             type='submit'
             className=' bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-x1'
-          >
+            style={{marginBottom: "36px"}}>
             {loading ? 'Sending' : 'Send'}
           </button>
         </form>
