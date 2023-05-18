@@ -50,7 +50,7 @@ const AboutBody = () => {
         I have two years diploma in Electrical Engineering Technology from NAIT. Additionally, I recently graduated from the Lighthouse Lab with diploma in Web development for more experiences in programming. I am passionate to learning new technologies, and love to communicate with others to share the knowledge, and I have strong time management skill.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap' style={{gap: "40px"}}>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

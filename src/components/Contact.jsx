@@ -55,7 +55,7 @@ export const ContactBody = () => {
   };
 
   return (
-    <div className='xl:mt12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='xl:mt12 xl:flex-row flex-col-reverse flex overflow-hidden' style={{gap:"40px"}}>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         className='flex-[.075] bg-black-100 p-8 rounded-2xl'
