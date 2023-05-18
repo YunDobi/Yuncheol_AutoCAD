@@ -33,7 +33,7 @@ const ProjectCard = ({
             className=' w-full h-full rounded-2xl'
           />
 
-          <div className='absolute inset-0 justify-end m-3 card-img_hover hidden group-hover:flex'>
+          <div className='absolute inset-0 justify-end m-3 card-img_hover flex'>
             {/* // not sure what is _blank */}
             <div
               onClick={() => window.open(source_code_link, '_blank')}
